@@ -1,0 +1,149 @@
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #FDFEFE;
+  padding: 1px 1px;
+  box-shadow: 10px 10px 10px 10px grey;
+  height: 250px;
+
+}
+.row {
+  display: flex;
+
+}
+/* Float the link section to the left */
+.header-right {
+  float: left;
+  width: 25%;
+  background: #000103  ;
+}
+/* Float the link section to the right */
+.middle {
+  float: left;
+  width: 75%;
+}
+
+/* Style the header links */
+.row a {
+  float:none;
+  text-align: left;
+  font-size: 25px;
+  line-height: 50px;
+  background: none;
+  display: block;
+  margin: 1px auto;
+  padding: 4px 5px;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+
+/* Change the background color on mouse-over */
+.row a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.bridge{
+  width: 50px;
+  vertical-align: middle;
+
+}
+
+.cartoon{
+  /* box-shadow: 10px 10px 10px 10px grey; */
+}
+.about{
+  background-color: #76D7C4;
+}
+.name{
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  border: 10px ;
+
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 100px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+html{
+	background-color:#FDFEFE;
+
+}
+
+.border{
+	padding: 3px;
+	background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #88d8b0 34%);
+	background-size: 100% 100%;
+	height: 400px;
+	background-position: 25% 50%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 5s ease infinite;
+  position: relative;
+}
+.inner-cutout{
+	padding: 10px 0;
+	display: block;
+	background-color:#111111;/*#ff6f69*/
+	margin: 2%;
+	padding-bottom: 5px;
+	height: 175px;
+	 background-size: 10%;
+	background-position:50% 50%;
+  position: relative;
+
+}
+.knockout {
+	vertical-align: middle;
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	font-size:70pt;
+	color: blue;
+  margin:auto;
+  line-height:175px;
+
+	color: #fff;
+	background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #88d8b0 34%);
+	background-size: 50%;
+	 -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  position: relative;
+}
+.knockout{
+		animation: Gradient 5s ease infinite;
+		-webkit-animation: Gradient 15s ease infinite;
+		-moz-animation: Gradient 5s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 30% 50%
+	}
+	50% {
+		background-position: 25% 50%
+	}
+	100% {
+		background-position: 30% 50%
+	}
+
+}
+
+
+
+.main{
+	width: auto;
+	height: auto;
+  margin: auto;
+}
